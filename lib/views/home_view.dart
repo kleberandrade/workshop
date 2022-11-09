@@ -26,7 +26,7 @@ class _HomePageState extends State<HomeView> {
         formKey: formKey,
         children: [
           NumberInputField(
-            controller: controller.weightController,
+            controller: controller.weightTextEditingController,
             label: 'Peso',
             validator: controller.weightValidator,
           ),
