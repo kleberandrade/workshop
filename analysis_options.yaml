@@ -1,0 +1,27 @@
+
+include: package:flutter_lints/flutter.yaml
+
+analyser:
+  errors:
+    prefer_single_quotes: warning
+
+linter:
+  rules:
+    prefer_single_quotes: true
+    avoid_print: true
+    prefer_const_constructors: true
+
+dart_code_metrics:
+  plugin: dart_code_metrics
+
+  anti-partterns:
+    - long-methods
+
+  metrics:
+    number-of-methods: 20
+    number-of-parameter: 4
+    cyclomatic-complexity: 20
+
+  rules:
+    - double-literal-format
+    - no-boolean-literal-compare
