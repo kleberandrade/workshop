@@ -17,7 +17,7 @@ class CalculatorController {
   double calculate() {
     final weigth = double.parse(weightTextEditingController.text);
     final height = double.parse(heightController.text);
-    final person = Person(weight: weigth, height: height);
+    final person = Person(weight: weigth, height: height / 100);
     final imc = person.weight / (person.height * person.height);
     return imc;
   }
